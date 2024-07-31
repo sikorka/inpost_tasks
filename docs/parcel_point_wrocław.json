@@ -1,0 +1,1781 @@
+{
+  "href": "https://api-pl-points.easypack24.net/v1/points",
+  "count": 622,
+  "page": 1,
+  "per_page": 25,
+  "total_pages": 25,
+  "items": [
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC13171",
+      "name": "CC13171",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.02891,
+        "latitude": 51.10309
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "Sklep Małpka Express",
+      "location_description_1": "MAŁPKA",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PON-ND 06:00-23:00",
+      "address": {
+        "line1": "Kościuszki 6/1",
+        "line2": "50-038 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-038",
+        "street": "Kościuszki",
+        "building_number": "6",
+        "flat_number": "1"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność wyłącznie za pomocą PayByLink",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM2522872",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC13171.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC13172",
+      "name": "CC13172",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03129,
+        "latitude": 51.1118
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "Sklep Małpka Express",
+      "location_description_1": "MAŁPKA",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PON-ND 06:00-23:00",
+      "address": {
+        "line1": "Odrzańska 4/5/1A",
+        "line2": "50-113 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-113",
+        "street": "Odrzańska",
+        "building_number": "4",
+        "flat_number": "5/1A"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność wyłącznie za pomocą PayByLink",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC13172.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC150",
+      "name": "CC150",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03834,
+        "latitude": 51.11888
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Jedności Narodowej 45/A",
+        "line2": "50-260 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-260",
+        "street": "Jedności Narodowej",
+        "building_number": "45",
+        "flat_number": "A"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC150.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC153",
+      "name": "CC153",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.04112,
+        "latitude": 51.11877
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Prusa 4",
+        "line2": "50-319 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-319",
+        "street": "Prusa",
+        "building_number": "4",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC153.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC170",
+      "name": "CC170",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.04028,
+        "latitude": 51.07722
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Świeradowska 24",
+        "line2": "50-559 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-559",
+        "street": "Świeradowska",
+        "building_number": "24",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM2522872",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC170.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC201",
+      "name": "CC201",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 16.99549,
+        "latitude": 51.12274
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Niedźwiedzia 17",
+        "line2": "54-232 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "54-232",
+        "street": "Niedźwiedzia",
+        "building_number": "17",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC201.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC218",
+      "name": "CC218",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03316,
+        "latitude": 51.11702
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Dubois 6/2",
+        "line2": "50-208 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-208",
+        "street": "Dubois",
+        "building_number": "6",
+        "flat_number": "2"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC218.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC246",
+      "name": "CC246",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.0258,
+        "latitude": 51.1412
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Bezpieczna 4",
+        "line2": "51-114 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "51-114",
+        "street": "Bezpieczna",
+        "building_number": "4",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC246.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC258",
+      "name": "CC258",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.1319,
+        "latitude": 51.1579
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Królewska 25/A",
+        "line2": "51-200 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "51-200",
+        "street": "Królewska",
+        "building_number": "25",
+        "flat_number": "A"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM1892345",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC258.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC302",
+      "name": "CC302",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 16.99007,
+        "latitude": 51.06597
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "7 - 24",
+      "address": {
+        "line1": "Przyjaźni 64/bud.2",
+        "line2": "53-030 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "53-030",
+        "street": "Przyjaźni",
+        "building_number": "64",
+        "flat_number": "bud.2"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM2522872",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC302.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC4",
+      "name": "CC4",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03333,
+        "latitude": 51.10889
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Oławska 2",
+        "line2": "50-123 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-123",
+        "street": "Oławska",
+        "building_number": "2",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC4.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC40",
+      "name": "CC40",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.01403,
+        "latitude": 51.08837
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 23",
+      "address": {
+        "line1": "Powstańców Śląskich 127/U1A",
+        "line2": "53-317 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "53-317",
+        "street": "Powstańców Śląskich",
+        "building_number": "127",
+        "flat_number": "U1A"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM2522872",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC40.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC44",
+      "name": "CC44",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.04984,
+        "latitude": 51.09909
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 23",
+      "address": {
+        "line1": "Kościuszki 146",
+        "line2": "50-440 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-440",
+        "street": "Kościuszki",
+        "building_number": "146",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM1892345",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC44.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC46",
+      "name": "CC46",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.02891,
+        "latitude": 51.10309
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 23",
+      "address": {
+        "line1": "Kościuszki 6/1",
+        "line2": "50-038 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-038",
+        "street": "Kościuszki",
+        "building_number": "6",
+        "flat_number": "1"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM2522872",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC46.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC47",
+      "name": "CC47",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03129,
+        "latitude": 51.1118
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 23",
+      "address": {
+        "line1": "Odrzańska 4/5 lok. 1\"A\"",
+        "line2": "50-113 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-113",
+        "street": "Odrzańska",
+        "building_number": "4",
+        "flat_number": "5 lok. 1\"A\""
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC47.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC49",
+      "name": "CC49",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.05261,
+        "latitude": 51.11634
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 23",
+      "address": {
+        "line1": "Sępa Szarzyńskiego 51",
+        "line2": "50-351 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-351",
+        "street": "Sępa Szarzyńskiego",
+        "building_number": "51",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC49.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC73",
+      "name": "CC73",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.02694,
+        "latitude": 51.10833
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Kazimierza Wielkiego 25/1d",
+        "line2": "50-077 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-077",
+        "street": "Kazimierza Wielkiego",
+        "building_number": "25",
+        "flat_number": "1d"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC73.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/CC74",
+      "name": "CC74",
+      "type": [
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03722,
+        "latitude": 51.10944
+      },
+      "location_type": "Indoor",
+      "location_date": null,
+      "location_description": "Punkt Małpki",
+      "location_description_1": null,
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "6 - 24",
+      "address": {
+        "line1": "Wita Stwosza 19/20A",
+        "line2": "50-148 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-148",
+        "street": "Wita Stwosza",
+        "building_number": "19",
+        "flat_number": "20A"
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "parcel",
+        "parcel_collect",
+        "parcel_send"
+      ],
+      "partner_id": 12,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM6663489",
+      "image_url": "https://static.easypack24.net/points/pl/images/CC74.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO10",
+      "name": "POP-WRO10",
+      "type": [
+        "pok",
+        "pop",
+        "pudo_mini"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.03854,
+        "latitude": 51.10789
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "Kredytum.pl S.A.",
+      "location_description_1": "Punkt",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": null,
+      "address": {
+        "line1": "ul. Bardzka 1a",
+        "line2": "50-516 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-516",
+        "street": "ul. Bardzka",
+        "building_number": "1a",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Brak obsługi płatności",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_send",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 30,
+      "is_next": false,
+      "payment_available": false,
+      "payment_type": {
+        "0": "Payments are not supported"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": true,
+      "operating_hours_extended": {
+        "customer": null
+      },
+      "agency": "IPM2522872",
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO10.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO103",
+      "name": "POP-WRO103",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 17.03539,
+        "latitude": 51.10205
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "SKALA",
+      "location_description_1": "Punkt",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PN-PT 09-19 SB 09-17",
+      "address": {
+        "line1": "Kościuszki 49",
+        "line2": "50-011 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-011",
+        "street": "Kościuszki",
+        "building_number": "49",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 540,
+              "end": 1140
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 540,
+              "end": 1140
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 540,
+              "end": 1140
+            }
+          ],
+          "thursday": [
+            {
+              "start": 540,
+              "end": 1140
+            }
+          ],
+          "friday": [
+            {
+              "start": 540,
+              "end": 1140
+            }
+          ],
+          "saturday": [
+            {
+              "start": 540,
+              "end": 1020
+            }
+          ],
+          "sunday": []
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO103.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO111",
+      "name": "POP-WRO111",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 17.03768,
+        "latitude": 51.09131
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "VAPE SHOP",
+      "location_description_1": "Punkt",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PN-PT 10-18 SB 10-14",
+      "address": {
+        "line1": "Łódzka  10",
+        "line2": "50-521 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-521",
+        "street": "Łódzka ",
+        "building_number": "10",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "thursday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "friday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "saturday": [
+            {
+              "start": 600,
+              "end": 840
+            }
+          ],
+          "sunday": []
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO111.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO114",
+      "name": "POP-WRO114",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Disabled",
+      "location": {
+        "longitude": 17.1096245,
+        "latitude": 51.1029159
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "SKLEP PAPIERNICZY PROPEC",
+      "location_description_1": "Punkt",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PN-PT 10-18 SB 10-14",
+      "address": {
+        "line1": "Piotra Norblina 36",
+        "line2": "51-664 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "51-664",
+        "street": "Piotra Norblina",
+        "building_number": "36",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "thursday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "friday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "saturday": [
+            {
+              "start": 600,
+              "end": 840
+            }
+          ],
+          "sunday": []
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO114.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO128",
+      "name": "POP-WRO128",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 17.059692859043,
+        "latitude": 51.0509051031649
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "DORABIANIE KLUCZY SEBKEY",
+      "location_description_1": "Punkt",
+      "location_description_2": "Punkt",
+      "distance": null,
+      "opening_hours": "PN-PT 10-18",
+      "address": {
+        "line1": "Buforowa 100",
+        "line2": "52-131 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "52-131",
+        "street": "Buforowa",
+        "building_number": "100",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "thursday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "friday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "saturday": [],
+          "sunday": []
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO128.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO144",
+      "name": "POP-WRO144",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 16.87299,
+        "latitude": 51.12043
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "SKLEP U POLAKÓW",
+      "location_description_1": "Punkt",
+      "location_description_2": "Punkt",
+      "distance": null,
+      "opening_hours": "PN-SB 06-22 ND 10-16",
+      "address": {
+        "line1": "Jerzmanowska 102",
+        "line2": "54-530 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "54-530",
+        "street": "Jerzmanowska",
+        "building_number": "102",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 360,
+              "end": 1320
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 360,
+              "end": 1320
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 360,
+              "end": 1320
+            }
+          ],
+          "thursday": [
+            {
+              "start": 360,
+              "end": 1320
+            }
+          ],
+          "friday": [
+            {
+              "start": 360,
+              "end": 1320
+            }
+          ],
+          "saturday": [
+            {
+              "start": 360,
+              "end": 1320
+            }
+          ],
+          "sunday": [
+            {
+              "start": 600,
+              "end": 960
+            }
+          ]
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO144.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO145",
+      "name": "POP-WRO145",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 17.0478,
+        "latitude": 51.07735
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "AGENCJA OPŁAT EXPERT (STOISKO 75)",
+      "location_description_1": "Punkt",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PN-PT 09-18 SB 09-13",
+      "address": {
+        "line1": "Świeradowska 70",
+        "line2": "50-559 Wrocław"
+      },
+      "address_details": {
+        "city": "Wrocław",
+        "province": "dolnośląskie",
+        "post_code": "50-559",
+        "street": "Świeradowska",
+        "building_number": "70",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 540,
+              "end": 1080
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 540,
+              "end": 1080
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 540,
+              "end": 1080
+            }
+          ],
+          "thursday": [
+            {
+              "start": 540,
+              "end": 1080
+            }
+          ],
+          "friday": [
+            {
+              "start": 540,
+              "end": 1080
+            }
+          ],
+          "saturday": [
+            {
+              "start": 540,
+              "end": 780
+            }
+          ],
+          "sunday": []
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO145.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    }
+  ],
+  "meta": {
+    "href": "https://api-pl-points.easypack24.net/v1/points",
+    "count": 622,
+    "page": 1,
+    "per_page": 25,
+    "total_pages": 25
+  }
+}
