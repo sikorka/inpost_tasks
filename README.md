@@ -41,17 +41,30 @@ However please note that all needed informations are in the task and if you'd ha
 
 You may send us your solution as a .zip or a link to your repository.
 
+
 Run tests
 =========
 
-All tests: 
+All tests, on default environment (`prod`): 
 
-    
+    mvn clean test
 
 API tests:
 
-    
+    mvn clean test -D cucumber.filter.tags="@api"
 
 UI tests:
 
-    
+    mvn clean test -D cucumber.filter.tags="@gui"
+
+Tests on environemnt: 
+
+    mvn clean test -D environment=prod
+    mvn clean test -D environment=sandbox
+    mvn clean test -D environment=sandboxpl
+
+
+Assumptions:
+============
+
+User is in charge of inputting city name in scenario. If they provide it somehow incorrectly, that's how it will be executed. 

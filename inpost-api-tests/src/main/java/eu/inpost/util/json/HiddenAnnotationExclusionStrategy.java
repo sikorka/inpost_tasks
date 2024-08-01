@@ -1,4 +1,4 @@
-package eu.inpost.util;
+package eu.inpost.util.json;
 
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;

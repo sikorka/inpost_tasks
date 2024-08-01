@@ -11,16 +11,12 @@
 
     <artifactId>inpost-api-tests</artifactId>
 
-    <properties>
-        <cucumber.plugin>pretty,html:target/cucumber.html,json:target/cucumber.json</cucumber.plugin>
-        <cucumber.glue>io.cucumber.skeleton</cucumber.glue>
-        <cucumber.snippets>camelcase</cucumber.snippets>
-        <cucumber.features>src/test/resources/eu/inpost/api/points/search.feature</cucumber.features>
-
-        <surefire.includeJUnit5Engines>cucumber</surefire.includeJUnit5Engines>
-    </properties>
-
     <dependencies>
+        <dependency>
+            <groupId>eu.inpost</groupId>
+            <artifactId>inpost-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -37,23 +33,28 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version> <!-- 2.22.2 -->
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
                 <configuration>
-                    <systemPropertyVariables>
-                        <!-- look and feel in command line -->
-                        <cucumber.plugin>${cucumber.plugin}</cucumber.plugin>
-<!--                        <cucumber.snippets>${cucumber.snippets}</cucumber.snippets>-->
-                        <cucumber.features>${cucumber.features}</cucumber.features>
-                        <cucumber.glue>${cucumber.glue}</cucumber.glue>
-                    </systemPropertyVariables>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <properties>
+                        <!-- Work around. Surefire does not include enough
+                             information to disambiguate between different
+                             examples and scenarios. -->
+                        <configurationParameters>
+                            cucumber.junit-platform.naming-strategy=long
+                            surefire.includeJUnit5Engines=cucumber
+                        </configurationParameters>
+                    </properties>
                 </configuration>
             </plugin>
         </plugins>

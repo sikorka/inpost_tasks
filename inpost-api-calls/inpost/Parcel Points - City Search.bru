@@ -5,13 +5,15 @@ meta {
 }
 
 get {
-  url: https://{{host}}/v1/points/?city=Wrocław
+  url: https://{{host}}/v1/points/?city=Wrocław&per_page=2&type=parcel_locker
   body: none
   auth: none
 }
 
 params:query {
   city: Wrocław
+  per_page: 2
+  type: parcel_locker
 }
 
 headers {

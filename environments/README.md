@@ -1,8 +1,8 @@
-Files in the main `environments` directory apply to all environments.
+Files under `environments` directory apply to all environments.
 
 Files under:
-- `prod`
-- `sandbox`
-- `sandboxpl`
+- `environments/prod`
+- `environments/sandbox`
+- `environments/sandboxpl`
 
 apply only to that environment. 

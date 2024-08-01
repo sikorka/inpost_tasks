@@ -1,56 +1,106 @@
 package eu.inpost.api.points;
 
-import eu.inpost.util.JsonReaderWriter;
-import io.cucumber.java.en.And;
+import eu.inpost.util.Environment;
+import eu.inpost.util.ParcelPointsFileWriter;
+import eu.inpost.util.json.JsonReaderWriter;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lombok.extern.log4j.Log4j2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static eu.inpost.util.PrettyLogs.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+import org.assertj.core.api.SoftAssertions;
+
 @Log4j2
 public class PointsSteps {
 
-    @Then("^Parcel Lockers found$")
-    public void parcelLockersFound() {
-        log.info(getCurrentMethodName());
-    }
+    private static final String PER_PAGE = "10000";
+    private static final String TYPE_PARCEL_LOCKER = "parcel_locker";
 
-    @And("^Parcel Lockers name, postal code, coordinates are saved to file$")
-    public void parcelLockersNamePostalCodeCoordinatesAreSavedToFile() {
-        log.info(getCurrentMethodName());
-    }
+    List<String> cities = new ArrayList<>();
 
-    @When("searching for Parcel Lockers by city {string}")
-    public void searchingForParcelLockersByCity(String city) {
-        log.info(getCurrentMethodName());
+    Response response;
+    ParcelPointsData parcelLockersData;
 
-        //RestAssured.urlEncodingEnabled = true;
+    @When("executing Parcel Lockers search by city {string}")
+    public void searchingForParcelLockersByOneOrSeveralCities(String cities) {
+        this.cities = Arrays.asList(cities.split(","));
 
-        Response response = RestAssured
+        String url = "https://" + Environment.getHost() + "/v1/points/?" +
+                "per_page=" + PER_PAGE +
+                "&type=" + TYPE_PARCEL_LOCKER +
+                "&city=" + cities;
+        log.info("URL to call: " + url);
+
+        response = RestAssured
                 .given()
                 .header("Content-Type", "application/json")
                 .when()
-                .get("https://api-pl-points.easypack24.net/v1/points/?per_page=2&city=" + city);
+                .get(url);
+    }
+
+    @When("executing Parcel Lockers search by cities {string}")
+    public void searchingForParcelLockersByCities(String cities) {
+        searchingForParcelLockersByOneOrSeveralCities(cities);
+    }
+
+    @Then("^Parcel Lockers found for city$")
+    public void parcelLockersFoundForCity() {
+        print(response);
+        assertThat("The call should have gone well (status=200)", response.statusCode(), is(equalTo(200)));
 
         String responseBody = response.getBody().asString();
+        parcelLockersData = JsonReaderWriter.fromJson(responseBody, ParcelPointsData.class);
+        print(parcelLockersData);
+        log.info("Total parcel lockers found: " + parcelLockersData.count);
 
-        log.info("Response: \n" +
-                responseBody);
-
-        ParcelPointsData parcelPointsData = JsonReaderWriter.fromJson(
-                responseBody, ParcelPointsData.class);
-
-        log.info("JSON object: \n" +
-                parcelPointsData);
+        SoftAssertions softly = new SoftAssertions();
+        cities.forEach(city -> {
+            List<ParcelPointsData.Point> pointsInCity = parcelLockersData.inCity(city);
+            softly.assertThat(pointsInCity.size())
+                    .as("At least one parcel locker should be found in `" + city + "'")
+                    .isGreaterThanOrEqualTo(1);
+            ParcelPointsFileWriter.writeToFileCityRelatedData(city, pointsInCity);
+        });
+        softly.assertAll();
     }
 
-    @When("searching for Parcel Lockers by several cities {string}")
-    public void searchingForParcelLockersBySeveralCities(String cities) {
-        log.info(getCurrentMethodName());
+    @Then("^Parcel Lockers not found for city$")
+    public void parcelLockersNotFoundForCity() {
+        print(response);
+        assertThat("The call should have gone well (status=200)", response.statusCode(), is(equalTo(200)));
+
+        String responseBody = response.getBody().asString();
+        parcelLockersData = JsonReaderWriter.fromJson(responseBody, ParcelPointsData.class);
+        print(parcelLockersData);
+        log.info("Total parcel lockers found: " + parcelLockersData.count);
+
+        SoftAssertions softly = new SoftAssertions();
+        cities.forEach(city -> {
+            List<ParcelPointsData.Point> pointsInCity = parcelLockersData.inCity(city);
+            softly.assertThat(pointsInCity.size())
+                    .as("No parcel locker should be found in `" + city + "'")
+                    .isEqualTo(0);
+            ParcelPointsFileWriter.writeToFileCityRelatedData(city, pointsInCity);
+        });
+        softly.assertAll();
     }
 
-    private String getCurrentMethodName() {
-        return Thread.currentThread().getStackTrace()[2].getMethodName();
+    @Then("^Parcel Lockers found for each city$")
+    public void parcelLockersFoundForEachCity() {
+        parcelLockersFoundForCity();
+    }
+
+    @Then("^Parcel Lockers NOT found for each city$")
+    public void parcelLockersNotFoundForEachCity() {
+        parcelLockersNotFoundForCity();
     }
 }

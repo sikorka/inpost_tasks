@@ -1,4 +1,4 @@
-package eu.inpost.util;
+package eu.inpost.util.json;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

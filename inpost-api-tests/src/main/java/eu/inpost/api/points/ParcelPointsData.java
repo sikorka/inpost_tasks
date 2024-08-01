@@ -1,11 +1,17 @@
 package eu.inpost.api.points;
 
 import com.google.gson.annotations.SerializedName;
-import eu.inpost.util.Hidden;
-import eu.inpost.util.JsonReaderWriter;
+import eu.inpost.util.json.Hidden;
+import eu.inpost.util.json.JsonReaderWriter;
+import lombok.Builder;
+import lombok.Data;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
+import static eu.inpost.util.TextSanitizer.*;
+
+@Data
 public class ParcelPointsData {
     @Hidden
     String href; //    "href": "https://api-pl-points.easypack24.net/v1/points",
@@ -22,7 +28,15 @@ public class ParcelPointsData {
 
     List<Point> items;
 
-    class Point {
+    public List<Point> inCity(String cityName) {
+        return items.stream()
+                .filter(p -> p.getAddressDetails().getCity().equals(cityName))
+                .collect(Collectors.toList());
+    }
+
+    @Data
+    @Builder
+    public static class Point {
         @Hidden
         String href; //    "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO103",
         String name; //    "name": "POP-WRO103",
@@ -37,29 +51,29 @@ public class ParcelPointsData {
             Float latitude; //"latitude": 51.10205
         }
 
-        //    "address_details": {
-    //        "city": "Wrocław",
-    //        "province": "dolnośląskie",
-    //        "post_code": "50-011",
-    //        "street": "Kościuszki",
-    //        "building_number": "49",
-    //        "flat_number": null
-    //    },
+        /**    "address_details": {
+                "city": "Wrocław",
+                "province": "dolnośląskie",
+                "post_code": "50-011",
+                "street": "Kościuszki",
+                "building_number": "49",
+                "flat_number": null
+        },*/
+        @Data
         class AddressDetails {
-            @Hidden
-            String city;
+            String city; //        "city": "Wrocław",
             @SerializedName("post_code")
-            String postCode;
+            String postCode; //        "post_code": "50-011",
         }
 
-        @Override
-        public String toString() {
-            return JsonReaderWriter.toJson(this);
-        }
     }
 
     @Override
     public String toString() {
+        return toJson();
+    }
+
+    public String toJson() {
         return JsonReaderWriter.toJson(this);
     }
 }

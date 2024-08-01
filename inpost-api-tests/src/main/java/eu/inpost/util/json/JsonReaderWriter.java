@@ -1,4 +1,4 @@
-package eu.inpost.util;
+package eu.inpost.util.json;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -14,7 +14,7 @@ public final class JsonReaderWriter {
             .setPrettyPrinting()
 //            .serializeNulls()
             .disableHtmlEscaping()
-            .setExclusionStrategies(new HiddenAnnotationExclusionStrategy())
+            .addSerializationExclusionStrategy(new HiddenAnnotationExclusionStrategy())
             .create();
 
     public static String toJson(Object object) {
