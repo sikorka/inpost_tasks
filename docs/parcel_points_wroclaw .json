@@ -1,0 +1,234 @@
+{
+  "href": "https://api-pl-points.easypack24.net/v1/points",
+  "count": 25,
+  "page": 1,
+  "per_page": 2,
+  "total_pages": 13,
+  "items": [
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO124",
+      "name": "POP-WRO124",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 17.04073,
+        "latitude": 51.10204
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "FURGONETKA",
+      "location_description_1": "Punkt",
+      "location_description_2": null,
+      "distance": null,
+      "opening_hours": "PN-PT 10-18",
+      "address": {
+        "line1": "Kniaziewicza 5A",
+        "line2": "50-454 Wrocław "
+      },
+      "address_details": {
+        "city": "Wrocław ",
+        "province": "dolnośląskie",
+        "post_code": "50-454",
+        "street": "Kniaziewicza",
+        "building_number": "5A",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "thursday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "friday": [
+            {
+              "start": 600,
+              "end": 1080
+            }
+          ],
+          "saturday": [],
+          "sunday": []
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO124.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    },
+    {
+      "href": "https://api-pl-points.easypack24.net/v1/points/POP-WRO134",
+      "name": "POP-WRO134",
+      "type": [
+        "parcel_locker",
+        "parcel_locker_superpop",
+        "pok",
+        "pop"
+      ],
+      "status": "Operating",
+      "location": {
+        "longitude": 16.9569372199844,
+        "latitude": 51.0778563626662
+      },
+      "location_type": null,
+      "location_date": null,
+      "location_description": "SKLEP SPOŻYWCZY ",
+      "location_description_1": "Punkt",
+      "location_description_2": "Punkt",
+      "distance": null,
+      "opening_hours": "PN-PT 07-21 SB-ND 08-19",
+      "address": {
+        "line1": "Balzaka 95 A",
+        "line2": "52-437 Wrocław "
+      },
+      "address_details": {
+        "city": "Wrocław ",
+        "province": "dolnośląskie",
+        "post_code": "52-437",
+        "street": "Balzaka",
+        "building_number": "95 A",
+        "flat_number": null
+      },
+      "phone_number": null,
+      "payment_point_descr": "Płatność internetowa aplikacją InPost Mobile i PayByLink",
+      "functions": [
+        "allegro_courier_reverse_return_send",
+        "allegro_courier_send",
+        "allegro_letter_reverse_return_send",
+        "allegro_letter_send",
+        "allegro_parcel_collect",
+        "allegro_parcel_reverse_return_send",
+        "allegro_parcel_send",
+        "parcel",
+        "parcel_collect",
+        "parcel_reverse_return_send",
+        "parcel_send",
+        "standard_courier_reverse_return_send",
+        "standard_courier_send",
+        "standard_letter_send"
+      ],
+      "partner_id": 33,
+      "is_next": false,
+      "payment_available": true,
+      "payment_type": {
+        "2": "Payment by card in the machine"
+      },
+      "virtual": "3",
+      "recommended_low_interest_box_machines_list": null,
+      "apm_doubled": null,
+      "location_247": false,
+      "operating_hours_extended": {
+        "customer": {
+          "monday": [
+            {
+              "start": 420,
+              "end": 1260
+            }
+          ],
+          "tuesday": [
+            {
+              "start": 420,
+              "end": 1260
+            }
+          ],
+          "wednesday": [
+            {
+              "start": 420,
+              "end": 1260
+            }
+          ],
+          "thursday": [
+            {
+              "start": 420,
+              "end": 1260
+            }
+          ],
+          "friday": [
+            {
+              "start": 420,
+              "end": 1260
+            }
+          ],
+          "saturday": [
+            {
+              "start": 480,
+              "end": 1140
+            }
+          ],
+          "sunday": [
+            {
+              "start": 480,
+              "end": 1140
+            }
+          ]
+        }
+      },
+      "agency": null,
+      "image_url": "https://static.easypack24.net/points/pl/images/POP-WRO134.jpg",
+      "easy_access_zone": false,
+      "air_index_level": null,
+      "physical_type_mapped": null,
+      "physical_type_description": null
+    }
+  ],
+  "meta": {
+    "href": "https://api-pl-points.easypack24.net/v1/points",
+    "count": 25,
+    "page": 1,
+    "per_page": 2,
+    "total_pages": 13
+  }
+}

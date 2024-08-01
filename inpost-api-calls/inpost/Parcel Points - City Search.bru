@@ -1,0 +1,21 @@
+meta {
+  name: Parcel Points - City Search
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://{{host}}/v1/points/?city=Wrocław&per_page=2&type=parcel_locker
+  body: none
+  auth: none
+}
+
+params:query {
+  city: Wrocław
+  per_page: 2
+  type: parcel_locker
+}
+
+headers {
+  Content-Type: application/json
+}

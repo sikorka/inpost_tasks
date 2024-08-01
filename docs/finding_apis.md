@@ -28,7 +28,7 @@ curl: (6) Could not resolve host: GET
 
     curl -X GET https://api-pl-points.easypack24.net/v1/points/?city=Wroc%C5%82aw -H 'Content-Type: application/json'
 
-[./parcel_point_wrocław.json](./parcel_point_wrocław.json)
+[./parcel_points_wrocław.json](./parcel_points_wrocław.json)
 
 
 ✅

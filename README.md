@@ -30,8 +30,8 @@ API test that will perform a Parcel Lockers search for a city (several cities) a
 - when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - test results should produce html report
 - GUI test report should contain screenshot in case of unsuccessful test result
-- (\*) simulation of running tests on few environments
-- (\*) docker-compose.yml
+- (*) simulation of running tests on few environments
+- (*) docker-compose.yml
 
 **Deadline**: usually 3 working days is enough, please let me know if you need more time.
 
@@ -41,16 +41,30 @@ However please note that all needed informations are in the task and if you'd ha
 
 You may send us your solution as a .zip or a link to your repository.
 
+
 Run tests
 =========
 
-All tests: 
+All tests, on default environment (`prod`): 
 
-    
+    mvn clean test
 
 API tests:
 
-
+    mvn clean test -D cucumber.filter.tags="@api"
 
 UI tests:
 
+    mvn clean test -D cucumber.filter.tags="@gui"
+
+Tests on environemnt: 
+
+    mvn clean test -D environment=prod
+    mvn clean test -D environment=sandbox
+    mvn clean test -D environment=sandboxpl
+
+
+Assumptions:
+============
+
+User is in charge of inputting city name in scenario. If they provide it somehow incorrectly, that's how it will be executed. 
