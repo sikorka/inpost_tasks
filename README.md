@@ -30,8 +30,8 @@ API test that will perform a Parcel Lockers search for a city (several cities) a
 - when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - test results should produce html report
 - GUI test report should contain screenshot in case of unsuccessful test result
-- (\*) simulation of running tests on few environments
-- (\*) docker-compose.yml
+- (*) simulation of running tests on few environments
+- (*) docker-compose.yml
 
 **Deadline**: usually 3 working days is enough, please let me know if you need more time.
 
@@ -50,7 +50,8 @@ All tests:
 
 API tests:
 
-
+    
 
 UI tests:
 
+    
