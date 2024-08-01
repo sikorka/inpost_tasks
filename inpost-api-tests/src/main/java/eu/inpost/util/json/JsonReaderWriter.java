@@ -12,7 +12,6 @@ public final class JsonReaderWriter {
 
     public static final Gson GSON = new GsonBuilder()
             .setPrettyPrinting()
-//            .serializeNulls()
             .disableHtmlEscaping()
             .addSerializationExclusionStrategy(new HiddenAnnotationExclusionStrategy())
             .create();

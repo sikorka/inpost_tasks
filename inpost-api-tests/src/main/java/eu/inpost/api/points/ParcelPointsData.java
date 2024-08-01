@@ -9,8 +9,6 @@ import lombok.Data;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static eu.inpost.util.TextSanitizer.*;
-
 @Data
 public class ParcelPointsData {
     @Hidden
@@ -51,14 +49,6 @@ public class ParcelPointsData {
             Float latitude; //"latitude": 51.10205
         }
 
-        /**    "address_details": {
-                "city": "Wrocław",
-                "province": "dolnośląskie",
-                "post_code": "50-011",
-                "street": "Kościuszki",
-                "building_number": "49",
-                "flat_number": null
-        },*/
         @Data
         class AddressDetails {
             String city; //        "city": "Wrocław",

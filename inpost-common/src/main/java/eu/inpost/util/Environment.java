@@ -1,8 +1,6 @@
 package eu.inpost.util;
 
-
 import lombok.extern.log4j.Log4j2;
-
 import java.util.Properties;
 
 @Log4j2
@@ -27,10 +25,6 @@ public class Environment {
     static {
         PrettyLogs.print(System.getProperties());
     }
-
-    public static String environmentName = "prod";
-
-    public static String host = "api-shipx-pl.easypack24.net";
 
     public static String getHost() {
         return getProperty(HOST_KEY);
