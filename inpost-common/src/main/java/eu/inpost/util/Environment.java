@@ -9,6 +9,7 @@ public class Environment {
 
     private static final String ENVIRONMENT_NAME_KEY = "ENVIRONMENT_NAME";
     private static final String HOST_KEY = "HOST";
+    private static final String GUI_HOST_KEY = "GUI_HOST";
 
     private Properties properties;
 
