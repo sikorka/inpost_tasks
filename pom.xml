@@ -8,10 +8,11 @@
     <artifactId>inpost-tasks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <modules>
+        <module>inpost-common</module>
         <module>inpost-api-tests</module>
         <module>inpost-ui-tests</module>
-        <module>inpost-common</module>
     </modules>
 
     <properties>

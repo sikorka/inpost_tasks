@@ -45,9 +45,15 @@ You may send us your solution as a .zip or a link to your repository.
 Run tests
 =========
 
-All tests, on default environment (`prod`): 
+All tests, on default environment: 
 
     mvn clean test
+
+Tests on environemnt:
+
+    mvn clean test -D environment=prod
+    mvn clean test -D environment=sandbox
+    mvn clean test -D environment=sandboxpl
 
 API tests:
 
@@ -57,14 +63,12 @@ UI tests:
 
     mvn clean test -D cucumber.filter.tags="@gui"
 
-Tests on environemnt: 
+API tests on `prod` environment:
 
-    mvn clean test -D environment=prod
-    mvn clean test -D environment=sandbox
-    mvn clean test -D environment=sandboxpl
+    mvn clean test -D environment=prod -D cucumber.filter.tags="@api"
 
 
 Assumptions:
 ============
 
-User is in charge of inputting city name in scenario. If they provide it somehow incorrectly, that's how it will be executed. 
+User is in charge of inputting city name in scenario. If they provide it somehow incorrectly, that's how it will be executed within API. 

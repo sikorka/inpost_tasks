@@ -8,6 +8,7 @@ import lombok.extern.log4j.Log4j2;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.List;
 
 @UtilityClass
@@ -21,7 +22,7 @@ public class ParcelPointsFileWriter {
     public static void writeToFileCityRelatedData(String cityName, List<Point> listOfPointsInCity) {
         String fileName = getCityFileName(cityName);
 
-        try (FileWriter fileWriter = new FileWriter(fileName)) {
+        try (FileWriter fileWriter = new FileWriter(Paths.get("target", fileName).toString())) {
             log.info("There are " + listOfPointsInCity.size() + " points in city '" + cityName + "' found. ");
 
             log.info("Saving city data to file: '" + fileName + "'...");

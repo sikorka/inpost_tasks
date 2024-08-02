@@ -25,14 +25,14 @@ public class PointsSteps {
     private static final String PER_PAGE = "10000";
     private static final String TYPE_PARCEL_LOCKER = "parcel_locker";
 
-    List<String> cities = new ArrayList<>();
+    List<String> citiesList = new ArrayList<>();
 
     Response response;
     ParcelPointsData parcelLockersData;
 
     @When("executing Parcel Lockers search by city {string}")
-    public void searchingForParcelLockersByOneOrSeveralCities(String cities) {
-        this.cities = Arrays.asList(cities.split(","));
+    public void searchingForParcelLockersByCity(String cities) {
+        this.citiesList = Arrays.asList(cities.split(","));
 
         String url = "https://" + Environment.getHost() + "/v1/points/?" +
                 "per_page=" + PER_PAGE +
@@ -49,7 +49,7 @@ public class PointsSteps {
 
     @When("executing Parcel Lockers search by cities {string}")
     public void searchingForParcelLockersByCities(String cities) {
-        searchingForParcelLockersByOneOrSeveralCities(cities);
+        searchingForParcelLockersByCity(cities);
     }
 
     @Then("^Parcel Lockers found for city$")
@@ -63,7 +63,7 @@ public class PointsSteps {
         log.info("Total parcel lockers found: " + parcelLockersData.count);
 
         SoftAssertions softly = new SoftAssertions();
-        cities.forEach(city -> {
+        citiesList.forEach(city -> {
             List<ParcelPointsData.Point> pointsInCity = parcelLockersData.inCity(city);
             softly.assertThat(pointsInCity.size())
                     .as("At least one parcel locker should be found in `" + city + "'")
@@ -73,7 +73,7 @@ public class PointsSteps {
         softly.assertAll();
     }
 
-    @Then("^Parcel Lockers not found for city$")
+    @Then("^Parcel Lockers NOT found for city$")
     public void parcelLockersNotFoundForCity() {
         print(response);
         assertThat("The call should have gone well (status=200)", response.statusCode(), is(equalTo(200)));
@@ -84,7 +84,7 @@ public class PointsSteps {
         log.info("Total parcel lockers found: " + parcelLockersData.count);
 
         SoftAssertions softly = new SoftAssertions();
-        cities.forEach(city -> {
+        citiesList.forEach(city -> {
             List<ParcelPointsData.Point> pointsInCity = parcelLockersData.inCity(city);
             softly.assertThat(pointsInCity.size())
                     .as("No parcel locker should be found in `" + city + "'")

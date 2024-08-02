@@ -1,4 +1,4 @@
-Files under `environments` directory apply to all environments.
+Files under `environments` directory are default files meaning they apply to all environments.
 
 Files under:
 - `environments/prod`
