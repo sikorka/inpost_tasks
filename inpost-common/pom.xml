@@ -10,5 +10,6 @@
     </parent>
 
     <artifactId>inpost-common</artifactId>
+    <packaging>jar</packaging>
 
 </project>
