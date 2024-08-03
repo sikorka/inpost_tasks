@@ -1,11 +1,9 @@
 package eu.inpost.api.points;
 
-import eu.inpost.util.Environment;
 import eu.inpost.util.ParcelPointsFileWriter;
 import eu.inpost.util.json.JsonReaderWriter;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lombok.extern.log4j.Log4j2;
 
@@ -32,19 +30,14 @@ public class PointsSteps {
 
     @When("executing Parcel Lockers search by city {string}")
     public void searchingForParcelLockersByCity(String cities) {
-        this.citiesList = Arrays.asList(cities.split(","));
+        citiesList = Arrays.asList(cities.split(","));
 
-        String url = "https://" + Environment.getHost() + "/v1/points/?" +
-                "per_page=" + PER_PAGE +
-                "&type=" + TYPE_PARCEL_LOCKER +
-                "&city=" + cities;
-        log.info("URL to call: " + url);
-
-        response = RestAssured
-                .given()
-                .header("Content-Type", "application/json")
-                .when()
-                .get(url);
+        response = ParcelPointsApiCall.builder()
+                .parcelLockerType(TYPE_PARCEL_LOCKER)
+                .perPage(PER_PAGE)
+                .city(cities)
+                .build()
+                .get();
     }
 
     @When("executing Parcel Lockers search by cities {string}")

@@ -29,7 +29,7 @@ List of packages with statuses:
 - run tests from a Docker image
 - ✅ when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - ✅ test results should produce html report
-- GUI test report should contain screenshot in case of unsuccessful test result
+- ✅ GUI test report should contain screenshot in case of unsuccessful test result
 - ✅ (*) simulation of running tests on few environments
 - (*) docker-compose.yml
 
@@ -47,28 +47,43 @@ Run tests
 
 All tests, on default environment: 
 
-    mvn clean test
+    mvn clean test --fail-at-end
 
-Tests on environemnt:
+To run tests on environemnt add:
 
-    mvn clean test -D environment=prod
-    mvn clean test -D environment=sandbox
-    mvn clean test -D environment=sandboxpl
+    -D environment=prod
+    -D environment=sandbox
+    -D environment=sandboxpl
 
-API tests:
+To run API tests only add:
 
-    mvn clean test -D cucumber.filter.tags="@api"
+    -D cucumber.filter.tags="@api"
 
-UI tests:
+To run UI tests only, add:
 
-    mvn clean test -D cucumber.filter.tags="@gui"
+    -D cucumber.filter.tags="@gui"
 
-API tests on `prod` environment:
+To change browser, add:
 
-    mvn clean test -D environment=prod -D cucumber.filter.tags="@api"
+    -D browser=chrome
+    -D browser=firefox
+
+API tests on `prod` environment in chrome:
+
+    mvn clean test -D environment=prod -D cucumber.filter.tags="@api" -D browser=chrome --fail-at-end
+
+Open report
+===========
+
+    open inpost-ui-tests/target/cucumber.html
+    open inpost-api-tests/target/cucumber.html
 
 
 Assumptions:
 ============
 
 User is in charge of inputting city name in scenario. If they provide it somehow incorrectly, that's how it will be executed within API. 
+
+Ad. Task 1. Test data and desired effect don't match - left failed tests. 
+
+Ad. Task 2. Some data fails tests because it is bad - left failed tests. This is not deterministic - there are times when that bad data is not present on environment 🙃
