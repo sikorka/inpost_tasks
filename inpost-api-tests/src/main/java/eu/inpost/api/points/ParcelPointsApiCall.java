@@ -18,6 +18,7 @@ public class ParcelPointsApiCall {
                 "per_page=" + perPage +
                 "&type=" + parcelLockerType +
                 "&city=" + city;
+
         log.info("URL to call: " + url);
 
         return RestAssured

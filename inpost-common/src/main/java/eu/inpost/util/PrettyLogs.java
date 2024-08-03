@@ -11,7 +11,8 @@ public final class PrettyLogs {
 
     public static void print(Properties properties) {
         if (properties == null || properties.isEmpty()) {
-            log.info("Properties are empty.");
+            log.error("Properties are empty.");
+
             return;
         }
 
