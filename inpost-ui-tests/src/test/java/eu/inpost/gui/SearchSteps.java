@@ -2,6 +2,7 @@ package eu.inpost.gui;
 
 import eu.inpost.gui.pages.FindParcelPage;
 import eu.inpost.gui.pages.HomePage;
+import eu.inpost.util.Environment;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
@@ -15,6 +16,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -26,9 +29,12 @@ public class SearchSteps {
     HomePage homePage = new HomePage(driver);
     FindParcelPage findParcelPage = new FindParcelPage(driver);
 
+    public SearchSteps() throws MalformedURLException {}
+
     @Given("InPost website is open")
     public void inpostWebsiteIsOpen() {
         homePage.get();
+        homePage.closeCookiesPopup();
     }
 
     @When("I search for package {string}")
@@ -39,7 +45,16 @@ public class SearchSteps {
     @Then("status should be {string}")
     public void statusShouldBe(String packageStatus) {
         findParcelPage.get();
-        findParcelPage.isOfStatus(packageStatus);
+
+        String statusTranslated = packageStatus;
+
+        switch (packageStatus) {
+            case "Collected": statusTranslated = Environment.getStatusCollected(); break;
+            case "Label nullified" : statusTranslated = Environment.getStatusLabelNullified(); break;
+            case "Passed for delivery" : break; //don't know the translation
+        }
+
+        findParcelPage.isOfStatus(statusTranslated);
     }
 
     @After()

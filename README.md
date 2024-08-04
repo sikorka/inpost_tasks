@@ -12,7 +12,7 @@ Task description
 
 **Task 1.**
 
-GUI test that will perform a search for a package on the InPost website by its number and check if it has a status as expected.
+✅ GUI test that will perform a search for a package on the InPost website by its number and check if it has a status as expected.
 List of packages with statuses:
 - no: 520113014230722029585646, expected status: Delivered
 - no: 520107010499997005638120, expected status: Passed for delivery
@@ -26,12 +26,12 @@ List of packages with statuses:
 **Guidelines:**
 
 - ✅ publish the repository with the solved tasks on github.
-- run tests from a Docker image
+- ✅ run tests from a Docker image
 - ✅ when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - ✅ test results should produce html report
 - ✅ GUI test report should contain screenshot in case of unsuccessful test result
 - ✅ (*) simulation of running tests on few environments
-- (*) docker-compose.yml
+- ✅ (*) docker-compose.yml
 
 **Deadline**: usually 3 working days is enough, please let me know if you need more time.
 
@@ -44,6 +44,9 @@ You may send us your solution as a .zip or a link to your repository.
 
 Run tests
 =========
+
+Run locally
+-----------
 
 All tests, on default environment: 
 
@@ -68,9 +71,44 @@ To change browser, add:
     -D browser=chrome
     -D browser=firefox
 
-API tests on `prod` environment in chrome:
+For example, API tests on `prod` environment in chrome:
 
     mvn clean test -D environment=prod -D cucumber.filter.tags="@api" -D browser=chrome --fail-at-end
+
+Run in Docker
+-------------
+
+# Run in standalone browser in Docker: 
+
+    docker pull selenium/standalone-firefox
+    docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox
+
+Check the grid at http://localhost:4444/ui/, see the browser action http://localhost:7900. 
+
+Run tests:
+    
+     mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D grid=http://localhost:4444 --fail-at-end
+
+
+# Run in Selenium grid in Docker: 
+
+    docker pull selenium/node-firefox
+    docker pull selenium/node-chrome 
+    docker pull selenium/node-edge
+
+    docker compose -f docker-compose.yml
+
+Check the grid - same as above - at http://localhost:4444/ui/, see the browser action http://localhost:7900.
+
+Run tests - same as above: 
+
+     mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D grid=http://localhost:4444 --fail-at-end
+
+To stop: 
+    
+    Ctrl+C
+    docker compose -f docker-compose.yml down
+
 
 Open report
 ===========
@@ -86,4 +124,4 @@ User is in charge of inputting city name in scenario. If they provide it somehow
 
 Ad. Task 1. Test data and desired effect don't match - left failed tests. 
 
-Ad. Task 2. Some data fails tests because it is bad - left failed tests. This is not deterministic - there are times when that bad data is not present on environment 🙃
+Ad. Task 2. Some data fails tests because it is bad - left failed tests. This is not deterministic - there are times when that bad data is not present on environment (even on prod) 🙃 
