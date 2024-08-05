@@ -26,7 +26,7 @@ List of packages with statuses:
 **Guidelines:**
 
 - ✅ publish the repository with the solved tasks on github.
-- run tests from a Docker image
+- ✅ run tests from a Docker image
 - ✅ when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - ✅ test results should produce html report
 - ✅ GUI test report should contain screenshot in case of unsuccessful test result
@@ -124,6 +124,32 @@ To stop:
     
     Ctrl+C
     docker compose -f docker-compose.yml down
+
+
+Run in Docker image
+-------------------
+
+Build the image: 
+
+    docker build -t inpota .
+
+Then run `docker-compose.yml`: 
+
+    docker compose -f docker-compose.yml up
+
+and note the address of the browser nodes you want to use, it should be sth like `http://<your IP>:5555`, for example `http://172.18.0.4:5555`. 
+
+Run the container:
+
+    docker run -t -d inpota
+
+Note the container name or ID:
+
+    docker ps
+
+Then run tests of your choice, for example: 
+
+    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://<your IP>:5555"
 
 
 Open report
