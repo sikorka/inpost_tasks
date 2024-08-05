@@ -126,30 +126,28 @@ To stop:
     docker compose -f docker-compose.yml down
 
 
-Run in Docker image
--------------------
+Run from a Docker image
+-----------------------
 
 Build the image: 
 
     docker build -t inpota .
 
-Then run `docker-compose.yml`: 
+In the meantime, run the grid: 
 
     docker compose -f docker-compose.yml up
 
-and note the grid address to use, it should be sth like `http://<your IP>:4444`. 
-
-Run the container:
+Run the container: 
 
     docker run -t -d inpota
 
-Note the container name or ID:
+Note the container name or ID: 
 
     docker ps
 
 Then run tests of your choice, for example: 
 
-    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://<your IP>:4444"
+    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://host.docker.internal:4444"
 
 
 Open report
