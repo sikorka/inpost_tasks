@@ -5,6 +5,7 @@ import eu.inpost.gui.pages.HomePage;
 import eu.inpost.util.Environment;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -21,12 +22,11 @@ import java.net.MalformedURLException;
 @Log4j2
 public class SearchSteps {
 
-    private final WebDriver driver = WebDriverFactory.createWebDriver();
+    private WebDriver driver;
 
-    HomePage homePage = new HomePage(driver);
-    FindParcelPage findParcelPage = new FindParcelPage(driver);
+    HomePage homePage;
+    FindParcelPage findParcelPage;
 
-    public SearchSteps() throws MalformedURLException {}
 
     @Given("InPost website is open")
     public void inpostWebsiteIsOpen() {
@@ -52,6 +52,14 @@ public class SearchSteps {
         }
 
         findParcelPage.isOfStatus(statusTranslated);
+    }
+
+    @Before()
+    public void openBrowser() throws MalformedURLException {
+        driver = WebDriverFactory.createWebDriver();
+        
+        homePage = new HomePage(driver);
+        findParcelPage = new FindParcelPage(driver);
     }
 
     @After()
