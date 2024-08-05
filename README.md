@@ -137,7 +137,7 @@ Then run `docker-compose.yml`:
 
     docker compose -f docker-compose.yml up
 
-and note the address of the browser nodes you want to use, it should be sth like `http://<your IP>:5555`, for example `http://172.18.0.4:5555`. 
+and note the grid address to use, it should be sth like `http://<your IP>:4444`. 
 
 Run the container:
 
@@ -149,7 +149,7 @@ Note the container name or ID:
 
 Then run tests of your choice, for example: 
 
-    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://<your IP>:5555"
+    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://<your IP>:4444"
 
 
 Open report
