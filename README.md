@@ -98,7 +98,7 @@ For example, API tests on `prod` environment:
 Run in Docker
 -------------
 
-# Run in standalone browser in Docker: 
+### Run in standalone browser in Docker: 
     
     docker pull selenium/standalone-firefox
     docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox
@@ -110,7 +110,7 @@ Run tests, for example:
      mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D grid=http://localhost:4444 --fail-at-end
 
 
-# Run in Selenium grid in Docker:
+### Run in Selenium grid in Docker:
     
     docker compose -f docker-compose.yml up
 
