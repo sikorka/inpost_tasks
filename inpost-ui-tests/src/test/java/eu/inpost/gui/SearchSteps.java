@@ -18,9 +18,6 @@ import org.openqa.selenium.WebDriver;
 
 import java.net.MalformedURLException;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-
 @Log4j2
 public class SearchSteps {
 

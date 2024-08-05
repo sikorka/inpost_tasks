@@ -21,4 +21,3 @@ COPY / /
 
 RUN ./mvnw install -DskipTests
 
-
