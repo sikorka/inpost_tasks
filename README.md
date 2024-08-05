@@ -26,7 +26,7 @@ List of packages with statuses:
 **Guidelines:**
 
 - ✅ publish the repository with the solved tasks on github.
-- ✅ run tests from a Docker image
+- run tests from a Docker image
 - ✅ when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - ✅ test results should produce html report
 - ✅ GUI test report should contain screenshot in case of unsuccessful test result
@@ -45,64 +45,80 @@ You may send us your solution as a .zip or a link to your repository.
 Run tests
 =========
 
+Before running
+--------------
+
+API tests are in `inpost-api-tests` module and GUI tests are in `inpost-gui-tests` module. In `inpost-common` there is common code - it should already be built and installed locally, before running tests:
+
+    cd ./inpost-common 
+    mvn clean install 
+    cd ..
+
 Run locally
 -----------
 
 All tests, on default environment: 
-
+    
     mvn clean test --fail-at-end
 
-To run tests on environemnt add:
-
+To run tests on environemnt add: 
+    
     -D environment=prod
     -D environment=sandbox
     -D environment=sandboxpl
 
-To run API tests only add:
-
+To run API tests only, add: 
+    
     -D cucumber.filter.tags="@api"
 
-To run UI tests only, add:
+or: 
+    
+    cd ./inpost-api-tests
+    mvn clean test
 
+To run UI tests only, add: 
+    
     -D cucumber.filter.tags="@gui"
 
-To change browser, add:
+or: 
 
+    cd ./inpost-gui-tests
+    mvn clean test
+
+To change browser, add: 
+    
     -D browser=chrome
     -D browser=firefox
 
-For example, API tests on `prod` environment in chrome:
-
-    mvn clean test -D environment=prod -D cucumber.filter.tags="@api" -D browser=chrome --fail-at-end
+For example, API tests on `prod` environment: 
+    
+    mvn clean test -D environment=prod -D cucumber.filter.tags="@api" --fail-at-end
+    mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D browser=chrome --fail-at-end
 
 Run in Docker
 -------------
 
 # Run in standalone browser in Docker: 
-
+    
     docker pull selenium/standalone-firefox
     docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox
 
 Check the grid at http://localhost:4444/ui/, see the browser action http://localhost:7900. 
 
-Run tests:
+Run tests, for example:
     
      mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D grid=http://localhost:4444 --fail-at-end
 
 
-# Run in Selenium grid in Docker: 
-
-    docker pull selenium/node-firefox
-    docker pull selenium/node-chrome 
-    docker pull selenium/node-edge
-
-    docker compose -f docker-compose.yml
+# Run in Selenium grid in Docker:
+    
+    docker compose -f docker-compose.yml up
 
 Check the grid - same as above - at http://localhost:4444/ui/, see the browser action http://localhost:7900.
 
 Run tests - same as above: 
-
-     mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D grid=http://localhost:4444 --fail-at-end
+    
+    mvn clean test -D environment=prod -D grid=http://localhost:4444 --fail-at-end
 
 To stop: 
     
@@ -112,7 +128,7 @@ To stop:
 
 Open report
 ===========
-
+    
     open inpost-ui-tests/target/cucumber.html
     open inpost-api-tests/target/cucumber.html
 
