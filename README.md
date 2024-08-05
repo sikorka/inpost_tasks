@@ -12,7 +12,7 @@ Task description
 
 **Task 1.**
 
-GUI test that will perform a search for a package on the InPost website by its number and check if it has a status as expected.
+✅ GUI test that will perform a search for a package on the InPost website by its number and check if it has a status as expected.
 List of packages with statuses:
 - no: 520113014230722029585646, expected status: Delivered
 - no: 520107010499997005638120, expected status: Passed for delivery
@@ -26,12 +26,12 @@ List of packages with statuses:
 **Guidelines:**
 
 - ✅ publish the repository with the solved tasks on github.
-- run tests from a Docker image
+- ✅ run tests from a Docker image
 - ✅ when running tests it should be possible to indicate whether you want to run only GUI , API or all tests
 - ✅ test results should produce html report
 - ✅ GUI test report should contain screenshot in case of unsuccessful test result
 - ✅ (*) simulation of running tests on few environments
-- (*) docker-compose.yml
+- ✅ (*) docker-compose.yml
 
 **Deadline**: usually 3 working days is enough, please let me know if you need more time.
 
@@ -45,36 +45,116 @@ You may send us your solution as a .zip or a link to your repository.
 Run tests
 =========
 
-All tests, on default environment: 
+Before running
+--------------
 
+API tests are in `inpost-api-tests` module and GUI tests are in `inpost-gui-tests` module. In `inpost-common` there is common code - it should already be built and installed locally, before running tests:
+
+    cd ./inpost-common 
+    mvn clean install 
+    cd ..
+
+Run locally
+-----------
+
+All tests, on default environment: 
+    
     mvn clean test --fail-at-end
 
-To run tests on environemnt add:
-
+To run tests on environemnt add: 
+    
     -D environment=prod
     -D environment=sandbox
     -D environment=sandboxpl
 
-To run API tests only add:
-
+To run API tests only, add: 
+    
     -D cucumber.filter.tags="@api"
 
-To run UI tests only, add:
+or: 
+    
+    cd ./inpost-api-tests
+    mvn clean test
 
+To run UI tests only, add: 
+    
     -D cucumber.filter.tags="@gui"
 
-To change browser, add:
+or: 
 
+    cd ./inpost-gui-tests
+    mvn clean test
+
+To change browser, add: 
+    
     -D browser=chrome
     -D browser=firefox
 
-API tests on `prod` environment in chrome:
+For example, API tests on `prod` environment: 
+    
+    mvn clean test -D environment=prod -D cucumber.filter.tags="@api" --fail-at-end
+    mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D browser=chrome --fail-at-end
 
-    mvn clean test -D environment=prod -D cucumber.filter.tags="@api" -D browser=chrome --fail-at-end
+Run in Docker
+-------------
+
+# Run in standalone browser in Docker: 
+    
+    docker pull selenium/standalone-firefox
+    docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox
+
+Check the grid at http://localhost:4444/ui/, see the browser action http://localhost:7900. 
+
+Run tests, for example:
+    
+     mvn clean test -D environment=prod -D cucumber.filter.tags="@gui" -D grid=http://localhost:4444 --fail-at-end
+
+
+# Run in Selenium grid in Docker:
+    
+    docker compose -f docker-compose.yml up
+
+Check the grid - same as above - at http://localhost:4444/ui/, see the browser action http://localhost:7900.
+
+Run tests - same as above: 
+    
+    mvn clean test -D environment=prod -D grid=http://localhost:4444 --fail-at-end
+
+To stop: 
+    
+    Ctrl+C
+    docker compose -f docker-compose.yml down
+
+
+Run in Docker image
+-------------------
+
+Build the image: 
+
+    docker build -t inpota .
+
+Then run `docker-compose.yml`: 
+
+    docker compose -f docker-compose.yml up
+
+and note the address of the browser nodes you want to use, it should be sth like `http://<your IP>:5555`, for example `http://172.18.0.4:5555`. 
+
+Run the container:
+
+    docker run -t -d inpota
+
+Note the container name or ID:
+
+    docker ps
+
+Then run tests of your choice, for example: 
+
+    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://<your IP>:5555"
+
 
 Open report
 ===========
-
+    
     open inpost-ui-tests/target/cucumber.html
     open inpost-api-tests/target/cucumber.html
 
@@ -86,4 +166,4 @@ User is in charge of inputting city name in scenario. If they provide it somehow
 
 Ad. Task 1. Test data and desired effect don't match - left failed tests. 
 
-Ad. Task 2. Some data fails tests because it is bad - left failed tests. This is not deterministic - there are times when that bad data is not present on environment 🙃
+Ad. Task 2. Some data fails tests because it is bad - left failed tests. This is not deterministic - there are times when that bad data is not present on environment (even on prod) 🙃 
