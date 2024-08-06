@@ -83,6 +83,7 @@
                                     <directory>${project.basedir}/../environments</directory>
                                     <includes>
                                         <include>*.properties</include>
+                                        <include>*.json</include>
                                     </includes>
                                     <filtering>true</filtering>
                                 </resource>
@@ -103,6 +104,7 @@
                                     <directory>${project.basedir}/../environments/${environment}/</directory>
                                     <includes>
                                         <include>**/*.properties</include>
+                                        <include>**/*.json</include>
                                     </includes>
                                     <filtering>true</filtering>
                                 </resource>

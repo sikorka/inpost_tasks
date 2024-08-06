@@ -8,12 +8,9 @@ public class Environment {
     private static final String ENVIRONMENT_PROPERTIES_FILE_NAME = "environment.properties";
 
     private static final String ENVIRONMENT_NAME_KEY = "ENVIRONMENT_NAME";
+    private static final String LANG_KEY = "LANG";
     private static final String HOST_KEY = "HOST";
     private static final String GUI_HOST_KEY = "GUI_HOST";
-
-    public static final String URL_PATH_FIND_PARCEL_KEY = "URL_PATH_FIND_PARCEL";
-    public static final String STATUS_COLLECTED_KEY = "STATUS_COLLECTED";
-    public static final String STATUS_LABEL_NULLIFIED_KEY = "STATUS_LABEL_NULLIFIED";
 
     private Properties properties;
 
@@ -43,16 +40,8 @@ public class Environment {
         return getProperty(ENVIRONMENT_NAME_KEY);
     }
 
-    public static String getUrlPathFindParcel() {
-        return getProperty(URL_PATH_FIND_PARCEL_KEY);
-    }
-
-    public static String getStatusCollected() {
-        return getProperty(STATUS_COLLECTED_KEY);
-    }
-
-    public static String getStatusLabelNullified() {
-        return getProperty(STATUS_LABEL_NULLIFIED_KEY);
+    public static String getLang() {
+        return getProperty(LANG_KEY);
     }
 
     private static String getProperty(String propertyKey) {

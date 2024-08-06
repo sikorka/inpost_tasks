@@ -1,6 +1,5 @@
 package eu.inpost.gui.pages;
 
-import eu.inpost.util.Environment;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,13 +10,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static eu.inpost.util.Translations.getTranslations;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
 public class FindParcelPage extends LoadableComponent<FindParcelPage> {
     WebDriver driver;
 
-    private static final String URL_PATH = Environment.getUrlPathFindParcel();
+    private static final String URL_PATH = getTranslations().getUrl_paths().getFind_parcel();
 
     @FindBy(css = ".message-box > .-big")
     private WebElement packageStatus;

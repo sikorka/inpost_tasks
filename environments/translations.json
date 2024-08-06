@@ -1,0 +1,24 @@
+{
+  "PL": {
+    "language": "polski",
+    "lang_code": "PL",
+    "statuses": {
+      "collected": "Odebrana",
+      "label_nullified": "Anulowano etykietę"
+    },
+    "url_paths": {
+      "find_parcel": "sledzenie-przesylek"
+    }
+  },
+  "EN": {
+    "language": "english",
+    "lang_code": "EN",
+    "statuses": {
+      "collected": "Collected",
+      "label_nullified": "Label nullified"
+    },
+    "url_paths": {
+      "find_parcel": "find-parcel"
+    }
+  }
+}

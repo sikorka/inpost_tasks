@@ -28,8 +28,6 @@ public class HomePage extends LoadableComponent<HomePage> {
     }
 
     public FindParcelPage inputPackageNumberAndSubmit(String number) {
-//        closeCookiesPopup();
-
         packageNumberInputField.sendKeys(number);
         packageNumberInputField.submit();
 

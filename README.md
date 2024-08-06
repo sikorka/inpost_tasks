@@ -165,3 +165,4 @@ User is in charge of inputting city name in scenario. If they provide it somehow
 Ad. Task 1. Test data and desired effect don't match - left failed tests. 
 
 Ad. Task 2. Some data fails tests because it is bad - left failed tests. This is not deterministic - there are times when that bad data is not present on environment (even on prod) 🙃 
+
