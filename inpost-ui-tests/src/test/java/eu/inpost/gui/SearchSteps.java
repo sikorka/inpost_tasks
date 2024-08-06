@@ -2,7 +2,6 @@ package eu.inpost.gui;
 
 import eu.inpost.gui.pages.FindParcelPage;
 import eu.inpost.gui.pages.HomePage;
-import eu.inpost.util.Environment;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -18,6 +17,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import java.net.MalformedURLException;
+
+import static eu.inpost.util.Translations.*;
 
 @Log4j2
 public class SearchSteps {
@@ -46,8 +47,8 @@ public class SearchSteps {
         String statusTranslated = packageStatus;
 
         switch (packageStatus) {
-            case "Collected": statusTranslated = Environment.getStatusCollected(); break;
-            case "Label nullified" : statusTranslated = Environment.getStatusLabelNullified(); break;
+            case "Collected": statusTranslated = getTranslations().getStatuses().getCollected(); break;
+            case "Label nullified" : statusTranslated = getTranslations().getStatuses().getLabel_nullified(); break;
             case "Passed for delivery" : break; //don't know the translation
         }
 
