@@ -1,4 +1,9 @@
-./docker
+/docker
+
+/inpost-api-tests/src/test/resources/*.json
+/inpost-api-tests/src/test/resources/*.properties
+/inpost-ui-tests/src/test/resources/*.json
+/inpost-ui-tests/src/test/resources/*.properties
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,intellij,intellij+all,intellij+iml,maven,java,groovy,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,intellij,intellij+all,intellij+iml,maven,java,groovy,git

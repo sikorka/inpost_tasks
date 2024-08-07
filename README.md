@@ -130,55 +130,57 @@ Run from a Docker image
 -----------------------
 
 Build the image: 
-
+    
     docker build -t inpota .
 
 In the meantime, run the grid: 
-
+    
     docker compose -f docker-compose.yml up
 
 Run the container: 
-
-    docker run -t -d inpota
-
-Note the container name or ID: 
-
-    docker ps
+    
+    docker kill inpota
+    docker run --rm -t -d --name inpota inpota
 
 Then run tests of your choice, for example: 
-
-    docker exec <container name or ID> bash -c "./mvnw clean test --fail-at-end -D grid=http://host.docker.internal:4444"
-
-
-Open report
-===========
     
+    docker exec inpota bash -c "./mvnw clean test --fail-at-end -D grid=http://host.docker.internal:4444"
+
+Or [run tests, collect results, open reports](#run-tests-collect-results-open-reports). 
+
+To clean up after runs: 
+    
+    docker compose -f docker-compose.yml down
+    docker kill inpota
+
+
+Open reports
+============
+
 Locally
 -------
 
     open inpost-ui-tests/target/cucumber.html
     open inpost-api-tests/target/cucumber.html
 
-From docker container run
+From Docker container run
 -------------------------
 
-Say you ran:
-
-    docker exec practical_moser bash -c "./mvnw clean test --fail-at-end -D environment=prod -D grid=http://host.docker.internal:4444"
-
-Collect locally:
+### Collect results locally:
 
     mkdir ./results/api/prod
-    docker cp practical_moser:inpost-api-tests/target ./results/prod/api
+    docker cp inpota:inpost-api-tests/target ./results/prod/api
     mkdir ./results/gui/prod
-    docker cp practical_moser:inpost-api-tests/target ./results/prod/gui
+    docker cp inpota:inpost-api-tests/target ./results/prod/gui
 
-Or run `docker_run.sh` script that runs tests and collects them locally:
-    
-    chmod u+x docker_run.sh 
-    ./docker_run.sh practical_moser prod
-    ./docker_run.sh practical_moser sandbox
-    ./docker_run.sh practical_moser sandboxpl
+### Run tests, collect results, open reports
+
+You can run `docker_tests_run.sh` script which runs tests, collects them locally and opens reports. For example: 
+
+    chmod u+x docker_tests_run.sh 
+    ./docker_tests_run.sh prod
+    ./docker_tests_run.sh sandbox @api
+    ./docker_tests_run.sh sandboxpl @gui
 
 
 Assumptions:
