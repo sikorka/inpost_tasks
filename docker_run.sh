@@ -12,7 +12,7 @@ then
   exit 1
 fi
 
-docker exec $1 bash -c "./mvnw clean test -D environment=$2 -D grid=http://host.docker.internal:4444 -D cucumber-filter-tags=$3"
+docker exec $1 bash -c "./mvnw clean test --fail-at-end -D environment=$2 -D grid=http://host.docker.internal:4444 -D cucumber-filter-tags=$3"
 
 timestamp=$(date +%Y%m%d_%H%M%S)
 

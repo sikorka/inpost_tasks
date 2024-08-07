@@ -147,7 +147,7 @@ Note the container name or ID:
 
 Then run tests of your choice, for example: 
 
-    docker exec <container name or ID> bash -c "./mvnw clean test -D grid=http://host.docker.internal:4444"
+    docker exec <container name or ID> bash -c "./mvnw clean test --fail-at-end -D grid=http://host.docker.internal:4444"
 
 
 Open report
@@ -164,7 +164,7 @@ From docker container run
 
 Say you ran:
 
-    docker exec practical_moser bash -c "./mvnw clean test -D environment=prod -D grid=http://host.docker.internal:4444"
+    docker exec practical_moser bash -c "./mvnw clean test --fail-at-end -D environment=prod -D grid=http://host.docker.internal:4444"
 
 Collect locally:
 
