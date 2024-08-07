@@ -68,6 +68,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>${project.basedir}/src/test/resources/</outputDirectory>
+                            <propertiesEncoding>${project.build.sourceEncoding}</propertiesEncoding>
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/../environments</directory>
@@ -88,7 +89,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>${project.basedir}/src/test/resources/</outputDirectory>
-                            <overwrite>true</overwrite>
+                            <propertiesEncoding>${project.build.sourceEncoding}</propertiesEncoding>
                             <resources>
                                 <resource>
                                     <directory>${project.basedir}/../environments/${environment}/</directory>

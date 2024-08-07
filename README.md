@@ -45,8 +45,8 @@ You may send us your solution as a .zip or a link to your repository.
 Run tests
 =========
 
-Before running
---------------
+Before running locally
+----------------------
 
 API tests are in `inpost-api-tests` module and GUI tests are in `inpost-gui-tests` module. In `inpost-common` there is common code - it should already be built and installed locally, before running tests:
 
@@ -153,8 +153,32 @@ Then run tests of your choice, for example:
 Open report
 ===========
     
+Locally
+-------
+
     open inpost-ui-tests/target/cucumber.html
     open inpost-api-tests/target/cucumber.html
+
+From docker container run
+-------------------------
+
+Say you ran:
+
+    docker exec practical_moser bash -c "./mvnw clean test -D environment=prod -D grid=http://host.docker.internal:4444"
+
+Collect locally:
+
+    mkdir ./results/api/prod
+    docker cp practical_moser:inpost-api-tests/target ./results/prod/api
+    mkdir ./results/gui/prod
+    docker cp practical_moser:inpost-api-tests/target ./results/prod/gui
+
+Or run `docker_run.sh` script that runs tests and collects them locally:
+    
+    chmod u+x docker_run.sh 
+    ./docker_run.sh practical_moser prod
+    ./docker_run.sh practical_moser sandbox
+    ./docker_run.sh practical_moser sandboxpl
 
 
 Assumptions:
